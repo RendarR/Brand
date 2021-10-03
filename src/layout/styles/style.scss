@@ -38,7 +38,10 @@ a {
     text-transform: uppercase;
   }
 }
-
+.browse{
+  padding: 11px;
+  font-size: 14px;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -128,6 +131,7 @@ a {
   box-shadow: $shadow;
 }
 .button {
+  white-space: nowrap;
   transition: all 0.3s;
   font-size: 15px;
   text-align: right;
@@ -194,7 +198,9 @@ a {
   display: flex;
   align-items: flex-start;
 }
-
+.sales_box{
+  margin: 20px auto 0px auto;
+}
 .promo__content {
   margin-top: 224px;
   border-left: 12px solid #f16d7f;
@@ -293,7 +299,7 @@ a {
   color: rgba(159, 159, 159, 1);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 60px;
+
 }
 .border{
   border: 1px solid black;
@@ -324,7 +330,7 @@ a {
 }
 
 .h2_item{
-  margin-top: 11px;
+
   font-size: 16px;
   font-weight: bold;
   color: rgba(241, 109, 127, 1);
@@ -355,7 +361,9 @@ a {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+.cart-img{
+  height: 20px;
+}
 .p_add_to_card{
   color: white;
 }
@@ -386,6 +394,7 @@ a {
 .button_shop{
   margin-top: 70px;
   text-align: center;
+  padding-bottom: 113px;
 }
 .button2 {
   transition: background-color 0.3s, color 0.5s;
@@ -398,8 +407,8 @@ a {
   padding: 12px 16px;
 }
 .offer-general{
-  margin-top: 113px;
   display: flex;
+  background-color: #1C1C1F;
 }
 .text_img_offer{
   position: absolute;
@@ -420,8 +429,8 @@ a {
 }
 .img_offer{
   background-image: url(../../assets/imgs/offer.png), url(../../assets/imgs/offerlogo.png);
-  width: 131%;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .right_offer{
   background-color:#1C1C1F;
@@ -1073,12 +1082,17 @@ steps-item{
 
 .header__right{
   position: relative;
+  padding-left: 250px;
 }
 .cart-header:hover
 .drop-cart{
   opacity: 1;
   z-index: 2;
   padding: 50px 15px 20px 15px;
+}
+.products{
+  padding-top: 60px;
+  background-color:#FFC1C9;
 }
 .drop-cart{
   right: 0;

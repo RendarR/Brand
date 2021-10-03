@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="../src/layout/styles/customBootstrap.css">
     <link rel="stylesheet" href="../src/layout/styles/style.css">
 </head>
 
 <body>
-<nav class="navbar header center navbar-expand-lg">
+<nav class="navbar header center navbar-expand-xl">
     <div class="container-fluid">
         <a class="logo navbar-brand" href="index.html">
             <img class="logo__img" src="../src/assets/imgs/18.png" alt="logo">
@@ -25,36 +24,17 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item header__left">
                     <form class="header__form" action="#" >
-                        <div class="header__form_text_input">
-                            <a class="browse" href="product.html">Browse
-                                <img src="../src/assets/imgs/browse.png" alt="">
-                                <div class="drop-borwse">
-                                    <div class="drop-brows-allvertical">
-                                        <ul class="drop-borwse-allvertical-ul">
-                                            <h3 class="drop-borwse-allvertical-ul-h3"><a class-="drop-borwse-allvertical-ul-a" href="#">Women</a></h3>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Dresses</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Tops</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Sweater/Knits</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Jakets/Coats</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Blazers</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Denim</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Leggings/Pants</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Skirts/Shorts</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Accessories</a></li>
-                                        </ul>
-                                        <ul class="drop-borwse-allvertical-ul">
-                                            <h3 class="drop-borwse-allvertical-ul-h3"><a class-="drop-borwse-allvertical-ul-a" href="#">Men</a></h3>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Tees/Tank tops </a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Shirts/Polos</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Sweaters</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Sweatshirts/Hoodies</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Blazer</a></li>
-                                            <li class="drop-borwse-allvertical-ul-li"><a class-="drop-borwse-allvertical-ul-a" href="#">Jakets/vests</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark bg-light browse" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Browse
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Действие</a></li>
+                        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                    </ul>
+                </li>
                         <input class="header_input_text" type="text" value="Search for item ..." onfocus="this.value=''">
                         <button class="header__form_button_input"><img src="../src/assets/imgs/59.png" alt=""></button>
                     </form>
@@ -162,29 +142,29 @@
         </div>
     </div>
 </div>
-<div class="sales center">
-    <div class="left_sales">
-        <div class="left_1_sales">
+<div class="sales container">
+    <div class="left_sales col align-self-start">
+        <div class="left_1_sales sales_box">
             <div class="sales_content">
                 <h2 class="sales_content_h1">HOT DEAL</h2>
                 <h1 class="sales_content_h2">FOR MEN</h1>
             </div>
         </div>
-        <div class="left_2_sales">
+        <div class="left_2_sales sales_box">
             <div class="sales_content">
                 <h2 class="sales_content_h1">luxirous & trendy</h2>
                 <h1 class="sales_content_h2">accesories</h1>
             </div>
         </div>
     </div>
-    <div class="right_sales">
-        <div class="right_1_sales">
+    <div class="right_sales col align-self-end">
+        <div class="right_1_sales sales_box">
             <div class="sales_content">
                 <h2 class="sales_content_h1">30% offer</h2>
                 <h1 class="sales_content_h2">women</h1>
             </div>
         </div>
-        <div class="right_2_sales">
+        <div class="right_2_sales sales_box">
             <div class="sales_content">
                 <h2 class="sales_content_h1">new arrivals</h2>
                 <h1 class="sales_content_h2">FOR kids</h1>
@@ -205,7 +185,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -224,7 +204,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -243,7 +223,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -262,7 +242,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -281,7 +261,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -300,7 +280,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -318,8 +298,8 @@
                     <div class="item__">
                         <div class="img_item">
                             <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                <div  class="gen_add_to_card">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -338,7 +318,7 @@
                         <div class="img_item">
                             <div class="open_text">
                                 <div class="gen_add_to_card">
-                                    <img src="../src/assets/imgs/1287.png" alt="">
+                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
                                     <p class="p_add_to_card">Add to card</p>
                                 </div>
                             </div>
@@ -358,15 +338,17 @@
     </div>
 </div>
 <div class="offer-general center">
-    <div class="img_offer">
-        <div class="text_img_offer">
+    <div class="img_offer col ">
+        <div class="text_img_offer col-8>
             <h1 class="h1_text_img_offer">30% OFFER</h1>
             <h2 class="h2_text_img_offer">FOR WOMEN</h2>
         </div>
     </div>
-    <div class="right_offer">
+    <div class="right_offer col-4">
         <div class="divilery">
-            <div class="img-divilery"><img src="../src/assets/imgs/divilery.png" alt=""></div>
+            <div class="img-divilery">
+                <img src="../src/assets/imgs/divilery.png" alt="">
+            </div>
             <div class="divilery-text">
                 <h1 class="divilery_h1">Free Delivery</h1>
                 <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
