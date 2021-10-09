@@ -1141,23 +1141,18 @@ steps-item {
   padding-left: 250px;
 }
 
-.cart-header:hover .drop-cart {
-  opacity: 1;
-  z-index: 2;
-  padding: 50px 15px 20px 15px;
-}
-
 .products {
   padding-top: 60px;
   background-color: #FFC1C9;
 }
 
 .drop-cart {
+  padding: 50px 15px 20px 15px;
   right: 0;
   transition: all 0.2s;
   margin-right: -60px;
-  opacity: 0;
-  z-index: -1;
+  opacity: 1;
+  z-index: 2;
   position: absolute;
   background-color: white;
   margin-top: 2px;
@@ -1166,12 +1161,19 @@ steps-item {
   transform: scale(1.03);
 }
 .drop-cart-products-1 {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-top: 17px;
   padding-bottom: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   border-bottom: 1px solid rgba(237, 237, 237, 0.75);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .drop-cart-products-1-delete {

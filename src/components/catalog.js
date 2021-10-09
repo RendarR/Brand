@@ -1,3 +1,4 @@
+'use strict'
 class CatalogItem{
     constructor(item){
         this.item = item;
@@ -27,12 +28,12 @@ class CatalogItem{
     }
 }
 
-export default class Catalog {
+new class Catalog {
     constructor(basket, container = '#catalog', url = '/catalog.json') {
         this.container = document.querySelector(container);
         this.items = [];
         this.basket = basket;
-        this.url = 'https://raw.githubusercontent.com/kellolo/static/master/JSON' + url;
+        this.url = 'https://raw.githubusercontent.com/RendarR/Other/master/' + url;
         this.init();
     }
     init() {
