@@ -1,3 +1,4 @@
+'use strict';
 class BasketItem{
     constructor(item){
         this.item = item;
@@ -14,7 +15,8 @@ class BasketItem{
                     </div>
                     <div class="drop-cart-products-1-delete"><img src="../src/assets/imgs/x.png" alt=""></div>
                 </div>
-            </div>
+                
+            
             `
     }
     sum(){
@@ -24,15 +26,15 @@ class BasketItem{
     }
 
 }
- export default class Basket {
+new class Basket {
      constructor(container = '#basket', url = '/basket.json'){
         this.items = [];
         this.container = document.querySelector(container);
         this.containerItems = document.querySelector('#basket-items');
-        this.totalPrice = document.querySelector('#price');
-        this.price = document.querySelector('#total');
+        this.totalPrice = document.querySelector('#total');
+        this.price = document.querySelector('#price');
         this.shown = false;
-        this.url = 'https://raw.githubusercontent.com/kellolo/static/master/JSON/' + url;
+        this.url = 'https://raw.githubusercontent.com/RendarR/Other/master' + url;
         this.init();
      }
     init() {
@@ -59,7 +61,7 @@ class BasketItem{
         this.items.forEach(item => {
             htmlStr += new BasketItem(item).render();
         });
-        this.container.innerHTML = htmlStr;
+        this.containerItems.innerHTML = htmlStr;
     }
     _renderSum(){
         let sum = 0;
@@ -73,7 +75,7 @@ class BasketItem{
 
         document.querySelector('#basket-toggler').addEventListener('click', () => {
             this.container.classList.toggle('invisible');
-            this.totalPrice.classList.toggle('invisible');
+            //this.totalPrice.classList.toggle('invisible');
             this.shown = !this.shown;
         });
         this.container.addEventListener('click', ev => {

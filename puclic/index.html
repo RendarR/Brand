@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../src/layout/styles/customBootstrap.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="../src/layout/styles/style.css">
+    <link rel="stylesheet" href="../src/layout/styles/customBootstrap.css">
 </head>
 <body>
 <nav class="navbar header center navbar-expand-xl scroll">
@@ -22,48 +23,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item header__left">
-                    <form class="header__form" action="#" >
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark bg-light browse" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Browse
-                    </a>
+                    <form class="header__form" action="#" ></form>
+                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark bg-light browse" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse
+                        </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Действие</a></li>
                         <li><a class="dropdown-item" href="#">Другое действие</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
                     </ul>
-                </li>
+                    </li>
                         <input class="header_input_text" type="text" value="Search for item ..." onfocus="this.value=''">
                         <button class="header__form_button_input"><img src="../src/assets/imgs/59.png" alt=""></button>
                     </form>
                 </li>
                 <li class="nav-item header__right">
-                    <div class=cart-header><a href="#"><img class="header__cart" src="../src/assets/imgs/cart.png" alt="cart"></a>
-                        <div class="drop-cart">
-                            <div class="drop-cart-products">
-                                <div class="drop-cart-products-1">
-                                    <img src="../src/assets/imgs/drop-cart1.png" alt="" class="drop-cart-products-1-img">
-                                    <div class="drop-cart-products-1-text">
-                                        <h3 class="drop-cart-products-1-text-h3">rebox zane</h3>
-                                        <img src="../src/assets/imgs/stars.png" alt="" class="drop-cart-products-1-text-stars">
-                                        <div class="drop-cart-products-1-text-totallist">1x$200</div>
-                                    </div>
-                                    <div class="drop-cart-products-1-delete"><img src="../src/assets/imgs/x.png" alt=""></div>
-                                </div>
-                                <div class="drop-cart-products-1">
-                                    <img src="../src/assets/imgs/drop-cart2.png" alt="" class="drop-cart-products-1-img">
-                                    <div class="drop-cart-products-1-text">
-                                        <h3 class="drop-cart-products-1-text-h3">rebox zane</h3>
-                                        <img src="../src/assets/imgs/stars.png" alt="" class="drop-cart-products-1-text-stars">
-                                        <div class="drop-cart-products-1-text-totallist">1x$200</div>
-                                    </div>
-                                    <div class="drop-cart-products-1-delete"><img src="../src/assets/imgs/x.png" alt=""></div>
-                                </div>
+                    <div class=cart-header id="basket-toggler"><a href="#"><img class="header__cart" src="../src/assets/imgs/cart.png" alt="cart"></a>
+                        <div class="drop-cart invisible" id="basket">
+                            <div class="drop-cart-products" id="basket-items" >
+
                             </div>
-                            <div class="drop-cart-total">
+                            <div class="drop-cart-total" id="">
                                 <p class="drop-cart-total-total">total</p>
-                                <p class="drop-cart-total-price">$500.00</p>
+                                <p class="drop-cart-total-price" id="price"></p>
                             </div>
                             <div class="drop-cart-buttons">
                                 <a href="checkout.html" class="drop-cart-buttons-checkout">checkout</a>
@@ -177,8 +162,8 @@
 </div>
 <div class="products center scroll">
     <div class="shop">
-        <div class="general-shop">
-            <div class="item">
+        <div class="general-shop" id="catalog">
+            <!--<div class="item">
                 <a href="#" class="item_">
                     <div class="item__">
                         <div class="img_item">
@@ -196,290 +181,285 @@
                         </div>
                     </div>
                 </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/poducts8.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product6.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product1.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product7.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product4.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div  class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product3.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#" class="item_">
-                    <div class="item__">
-                        <div class="img_item">
-                            <div class="open_text">
-                                <div class="gen_add_to_card">
-                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
-                                    <p class="p_add_to_card">Add to card</p>
-                                </div>
-                            </div>
-                            <img src="../src/assets/imgs/product2.png" alt="">
-                        </div>
-                        <div class="footer_item">
-                            <h1 class="h1_item">Mango  People  T-shirt</h1>
-                            <h2 class="h2_item">$52.00</h2>
+                             </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/poducts8.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product6.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product1.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product7.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product4.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div  class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product3.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div><div class="item">
+                                <a href="#" class="item_">
+                                    <div class="item__">
+                                        <div class="img_item">
+                                            <div class="open_text">
+                                                <div class="gen_add_to_card">
+                                                    <img class="cart-img" src="../src/assets/imgs/cart.png" alt="">
+                                                    <p class="p_add_to_card">Add to card</p>
+                                                </div>
+                                            </div>
+                                            <img src="../src/assets/imgs/product2.png" alt="">
+                                        </div>
+                                        <div class="footer_item">
+                                            <h1 class="h1_item">Mango  People  T-shirt</h1>
+                                            <h2 class="h2_item">$52.00</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>-->
                         </div>
                     </div>
-                </a>
+            <div class="button_shop">
+                <a href="#" class="button2">Browse All Product</a>
             </div>
         </div>
-    </div>
-    <div class="button_shop">
-        <a href="#" class="button2">Browse All Product</a>
-    </div>
-</div>
-<div class="offer-general center scroll">
-    <div class="img_offer col ">
-        <div class="text_img_offer col-8">
-            <h1 class="h1_text_img_offer">30% OFFER</h1>
-            <h2 class="h2_text_img_offer">FOR WOMEN</h2>
-        </div>
-    </div>
-    <div class="right_offer col-4">
-        <div class="divilery">
-            <div class="img-divilery">
-                <img src="../src/assets/imgs/divilery.png" alt="">
+        <div class="offer-general center scroll">
+            <div class="img_offer col ">
+                <div class="text_img_offer col-8">
+                    <h1 class="h1_text_img_offer">30% OFFER</h1>
+                    <h2 class="h2_text_img_offer">FOR WOMEN</h2>
+                </div>
             </div>
-            <div class="divilery-text">
-                <h1 class="divilery_h1">Free Delivery</h1>
-                <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-        </div>
-        <div class="divilery">
-            <div class="img-divilery"><img src="../src/assets/imgs/sale.png" alt=""></div>
-            <div class="divilery-text">
-                <h1 class="divilery_h1">Sales & discounts</h1>
-                <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-        </div>
-        <div class="divilery">
-            <div class="img-divilery"><img src="../src/assets/imgs/corona.png" alt=""></div>
-            <div class="divilery-text">
-                <h1 class="divilery_h1">Quality assurance</h1>
-                <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="subscribe center scroll">
-    <div class="subscribe_left">
-        <div class="subscribe_photo">
-            <img src="../src/assets/imgs/photo.png" alt="">
-        </div>
-        <div class="subscribe_comment">
-            <p class="text_comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-            </p>
-            <div class="name_comment">
-                <p class="_1name">Bin Burhan</p>
-                <p class="_2name">Dhaka, Bd</p>
-                <div class="slide">
-                    <div class="slider"></div>
-                    <div class="slider"></div>
-                    <div class="slider"></div>
+            <div class="right_offer col-4">
+                <div class="divilery">
+                    <div class="img-divilery">
+                        <img src="../src/assets/imgs/divilery.png" alt="">
+                    </div>
+                    <div class="divilery-text">
+                        <h1 class="divilery_h1">Free Delivery</h1>
+                        <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="divilery">
+                    <div class="img-divilery"><img src="../src/assets/imgs/sale.png" alt=""></div>
+                    <div class="divilery-text">
+                        <h1 class="divilery_h1">Sales & discounts</h1>
+                        <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
+                </div>
+                <div class="divilery">
+                    <div class="img-divilery"><img src="../src/assets/imgs/corona.png" alt=""></div>
+                    <div class="divilery-text">
+                        <h1 class="divilery_h1">Quality assurance</h1>
+                        <p class="divilery_p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="subscribe_right">
-        <h2 class="h2_subscribe">SUBSCRIBE</h2>
-        <p class="p_subscribe">FOR OUR NEWLETTER AND PROMOTION</p>
-        <div class="input_subscribe">
-            <input type="text" class="text_subscribe" value="Enter Your Email" onfocus="this.value=''">
-            <input type="button" class="button_subscribe" value="Subscribe">
+        <div class="subscribe center scroll">
+            <div class="subscribe_left">
+                <div class="subscribe_photo">
+                    <img src="../src/assets/imgs/photo.png" alt="">
+                </div>
+                <div class="subscribe_comment">
+                    <p class="text_comment">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                    </p>
+                    <div class="name_comment">
+                        <p class="_1name">Bin Burhan</p>
+                        <p class="_2name">Dhaka, Bd</p>
+                        <div class="slide">
+                            <div class="slider"></div>
+                            <div class="slider"></div>
+                            <div class="slider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe_right">
+                <h2 class="h2_subscribe">SUBSCRIBE</h2>
+                <p class="p_subscribe">FOR OUR NEWLETTER AND PROMOTION</p>
+                <div class="input_subscribe">
+                    <input type="text" class="text_subscribe" value="Enter Your Email" onfocus="this.value=''">
+                    <input type="button" class="button_subscribe" value="Subscribe">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<div class="footer_first center scroll">
-    <div class="footer_first_text">
-        <a class="logo" href="">
-            <img class="logo__img" src="../src/assets/imgs/18.png" alt="logo">
-            <div class="logo_">bran</div>
-            <div class="logo__">d</div>
-        </a>
-        <p class="footer_first_text_">
-            Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
-            Efficiently plagiarize 24/365 action items and focused infomediaries.
-            Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-            lorem1000
-        </p>
-    </div>
-    <div class="list_footer">
-        <div class="footer_first_list1">
-            <h2 class="h2_first_list">COMPANY</h2>
-            <ul class="ul_list">
-                <li class="li_list"><a class="li_li" href="#">Home</a></li>
-                <li class="li_list"><a class="li_li" href="#">Shop</a></li>
-                <li class="li_list"><a class="li_li" href="#">About</a></li>
-                <li class="li_list"><a class="li_li" href="#">How it Works</a></li>
-                <li class="li_list"><a class="li_li" href="#">Contacts</a></li>
-            </ul>
+        <div class="footer_first center scroll">
+            <div class="footer_first_text">
+                <a class="logo" href="">
+                    <img class="logo__img" src="../src/assets/imgs/18.png" alt="logo">
+                    <div class="logo_">bran</div>
+                    <div class="logo__">d</div>
+                </a>
+                <p class="footer_first_text_">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    lorem1000
+                </p>
+            </div>
+            <div class="list_footer">
+                <div class="footer_first_list1">
+                    <h2 class="h2_first_list">COMPANY</h2>
+                    <ul class="ul_list">
+                        <li class="li_list"><a class="li_li" href="#">Home</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Shop</a></li>
+                        <li class="li_list"><a class="li_li" href="#">About</a></li>
+                        <li class="li_list"><a class="li_li" href="#">How it Works</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_first_list2">
+                    <h2 class="h2_first_list">INFORMATION</h2>
+                    <ul class="ul_list">
+                        <li class="li_list"><a class="li_li "href="#">Tearms & Condition</a></li>
+                        <li class="li_list"><a class="li_li "href="#">Privacy Policy</a></li>
+                        <li class="li_list"><a class="li_li "href="#">How to Buy</a></li>
+                        <li class="li_list"><a class="li_li "href="#">How to Sell</a></li>
+                        <li class="li_list"><a class="li_li "href="#">Promot</a></li>
+                    </ul>
+                </div>
+                <div class="footer_first_list3">
+                    <h2 class="h2_first_list">SHOP CATEGORY</h2>
+                    <ul class="ul_list">
+                        <li class="li_list"><a class="li_li" href="#">Men</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Women</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Child</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Apperel</a></li>
+                        <li class="li_list"><a class="li_li" href="#">Brows All</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer_first_list2">
-            <h2 class="h2_first_list">INFORMATION</h2>
-            <ul class="ul_list">
-                <li class="li_list"><a class="li_li "href="#">Tearms & Condition</a></li>
-                <li class="li_list"><a class="li_li "href="#">Privacy Policy</a></li>
-                <li class="li_list"><a class="li_li "href="#">How to Buy</a></li>
-                <li class="li_list"><a class="li_li "href="#">How to Sell</a></li>
-                <li class="li_list"><a class="li_li "href="#">Promot</a></li>
-            </ul>
-        </div>
-        <div class="footer_first_list3">
-            <h2 class="h2_first_list">SHOP CATEGORY</h2>
-            <ul class="ul_list">
-                <li class="li_list"><a class="li_li" href="#">Men</a></li>
-                <li class="li_list"><a class="li_li" href="#">Women</a></li>
-                <li class="li_list"><a class="li_li" href="#">Child</a></li>
-                <li class="li_list"><a class="li_li" href="#">Apperel</a></li>
-                <li class="li_list"><a class="li_li" href="#">Brows All</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="footer_second scroll">
-    <div class="footer_left_second">
-        <p class="p_text_footer_left">© 2017  Brand  All Rights Reserved.</p>
-    </div>
-    <div class="footer_right_second">
-        <a href="#" target="_blank"><div class="social facebook"><i class="center_ fa fa-facebook fa-2x"></i>
-        </div></a>
-        <a href="#" target="_blank"><div class="social twitter"><i class="center_ fa fa-twitter fa-2x"></i>
-        </div></a>
-        <a href="#" target="_blank"><div class="social linkedin"><i class="center_ fa fa-linkedin fa-2x"></i></div></a>
+        <div class="footer_second scroll">
+            <div class="footer_left_second">
+                <p class="p_text_footer_left">© 2017  Brand  All Rights Reserved.</p>
+            </div>
+            <div class="footer_right_second">
+                <a href="#" target="_blank"><div class="social facebook"><i class="center_ fa fa-facebook fa-2x"></i>
+                </div></a>
+                <a href="#" target="_blank"><div class="social twitter"><i class="center_ fa fa-twitter fa-2x"></i>
+                </div></a>
+                <a href="#" target="_blank"><div class="social linkedin"><i class="center_ fa fa-linkedin fa-2x"></i></div></a>
 
-        <a href="#" target="_blank"><div class="social pinterest"><i class="center_ fa fa-pinterest fa-2x"></i></div></a>
+                <a href="#" target="_blank"><div class="social pinterest"><i class="center_ fa fa-pinterest fa-2x"></i></div></a>
 
-        <a href="#" target="_blank"><div class="social google-pluse"><i class="center_ fa fa-google-plus fa-2x"></i></div></a>
+                <a href="#" target="_blank"><div class="social google-pluse"><i class="center_ fa fa-google-plus fa-2x"></i></div></a>
 
-    </div>
+            </div>
 
-</div>
-<div class="footer_second scroll">
-    <div class="footer_left_second">
-        <p class="p_text_footer_left">© 2017  Brand  All Rights Reserved.</p>
-    </div>
-    <div class="footer_right_second">
-        <a href="#" target="_blank"><div class="social facebook"><i class="center_ fa fa-facebook fa-2x"></i>
-        </div></a>
-        <a href="#" target="_blank"><div class="social twitter"><i class="center_ fa fa-twitter fa-2x"></i>
-        </div></a>
-        <a href="#" target="_blank"><div class="social linkedin"><i class="center_ fa fa-linkedin fa-2x"></i></div></a>
+            </div>
+            <div class="footer_second scroll">
+                <div class="footer_left_second">
+                    <p class="p_text_footer_left">© 2017  Brand  All Rights Reserved.</p>
+                </div>
+                <div class="footer_right_second">
+                    <a href="#" target="_blank"><div class="social facebook"><i class="center_ fa fa-facebook fa-2x"></i>
+                    </div></a>
+                    <a href="#" target="_blank"><div class="social twitter"><i class="center_ fa fa-twitter fa-2x"></i>
+                    </div></a>
+                    <a href="#" target="_blank"><div class="social linkedin"><i class="center_ fa fa-linkedin fa-2x"></i></div></a>
 
-        <a href="#" target="_blank"><div class="social pinterest"><i class="center_ fa fa-pinterest fa-2x"></i></div></a>
+                    <a href="#" target="_blank"><div class="social pinterest"><i class="center_ fa fa-pinterest fa-2x"></i></div></a>
 
-        <a href="#" target="_blank"><div class="social google-pluse"><i class="center_ fa fa-google-plus fa-2x"></i></div></a>
+                    <a href="#" target="_blank"><div class="social google-pluse"><i class="center_ fa fa-google-plus fa-2x"></i></div></a>
+                </div>
 
-    </div>
-
-</div>
+                </div>
+<script> console.log("hello")</script>
+<script src="../src/components/catalog.js"></script>
+<script src="../src/components/basket.js"></script>
 </body>
 </html>
