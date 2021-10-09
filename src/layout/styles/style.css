@@ -1157,9 +1157,6 @@ steps-item {
   background-color: white;
   margin-top: 2px;
 }
-.drop-cart-products-1:hover {
-  transform: scale(1.03);
-}
 .drop-cart-products-1 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1176,35 +1173,36 @@ steps-item {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.drop-cart-products-1-delete {
+.drop-cart-delete {
   justify-content: flex-end;
 }
-.drop-cart-products-1-text {
+.drop-cart-text {
   text-align: left;
   margin-left: -17%;
+  padding: 0 0 0 18px;
 }
-.drop-cart-products-1-text-h3 {
+.drop-cart-text-h3 {
   margin-top: 7px;
   font-size: 12px;
   font-weight: 800;
   color: #222222;
   text-transform: uppercase;
 }
-.drop-cart-products-1-text-stars {
+.drop-cart-text-stars {
   margin-top: 10px;
 }
-.drop-cart-products-1-text-totallist {
+.drop-cart-text-totallist {
   margin-top: 6px;
   font-size: 12px;
   color: #f16d7f;
   text-transform: uppercase;
 }
-.drop-cart-products-1-delete {
+.drop-cart-delete {
   display: flex;
   margin-top: 14%;
   transition: 0.5s;
 }
-.drop-cart-products-1-delete:hover {
+.drop-cart-delete:hover {
   -webkit-filter: brightness(60%);
   transform: rotate(90deg);
 }

@@ -7,4 +7,11 @@ p {
   margin-bottom: 0;
 }
 
+h3 {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #222222;
+}
+
 /*# sourceMappingURL=customBootstrap.css.map */
