@@ -5,6 +5,7 @@ $border_width: 1px;
 $border: $border_width solid $color-select;
 $shadow: 0 0px 1px rgba(0,0,0,10.22);
 $color-border: rgba(230, 230, 230, 1);
+
 * {
   margin: 0;
   padding: 0;
@@ -1097,29 +1098,21 @@ steps-item{
   position: absolute;
   background-color: white;
   margin-top: 2px;
-      &-products-1 {
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        padding-top: 17px;
-        padding-bottom: 17px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        border-bottom: 1px solid rgba(237, 237, 237, 0.75);
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-      }
-      &-delete{
-        justify-content: flex-end;
-      }
-      &-text{
-        text-align: left;
-        margin-left: -17%;
-        padding: 0 0 0 18px;
+  &-products-1{
+    transition: 0.3s;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(237, 237, 237, 0.75);
+    justify-content: space-between;
+
+    &-delete{
+      justify-content: flex-end;
+    }
+    &-text{
+      text-align: left;
+      margin-left: 17%;
       &-h3{
         margin-top: 7px;
         font-size: 12px;
@@ -1146,17 +1139,18 @@ steps-item{
       -webkit-filter: brightness(60%);
       transform: rotate(90deg);
     }
-    &-total{
-      display: flex;
-      margin-top: 19px;
-      font-size: 16px;
-      font-weight: bold;
-      color: rgba(34, 34, 34, 1);
-      text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
-    }
-    &-buttons{
+  }
+  &-total{
+    display: flex;
+    margin-top: 19px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 1);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-buttons{
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1158,51 +1158,43 @@ steps-item {
   margin-top: 2px;
 }
 .drop-cart-products-1 {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-top: 17px;
   padding-bottom: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   border-bottom: 1px solid rgba(237, 237, 237, 0.75);
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.drop-cart-delete {
+.drop-cart-products-1-delete {
   justify-content: flex-end;
 }
-.drop-cart-text {
+.drop-cart-products-1-text {
   text-align: left;
-  margin-left: -17%;
-  padding: 0 0 0 18px;
+  margin-left: 17%;
 }
-.drop-cart-text-h3 {
+.drop-cart-products-1-text-h3 {
   margin-top: 7px;
   font-size: 12px;
   font-weight: 800;
   color: #222222;
   text-transform: uppercase;
 }
-.drop-cart-text-stars {
+.drop-cart-products-1-text-stars {
   margin-top: 10px;
 }
-.drop-cart-text-totallist {
+.drop-cart-products-1-text-totallist {
   margin-top: 6px;
   font-size: 12px;
   color: #f16d7f;
   text-transform: uppercase;
 }
-.drop-cart-delete {
+.drop-cart-products-1-delete {
   display: flex;
   margin-top: 14%;
   transition: 0.5s;
 }
-.drop-cart-delete:hover {
+.drop-cart-products-1-delete:hover {
   -webkit-filter: brightness(60%);
   transform: rotate(90deg);
 }

@@ -10,22 +10,25 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader',]
+
             },
+
             {
                 test: /\.(png|jpe?g|svg|gif)$/i,
-                use: ['file-loader']
+                use: ['url-loader']
             },
         ]
+
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css'
+            filename: 'css/[name].css',
+            chunkFilename: '[id].css',
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './src/assets/imgs', to: 'img' }
+                { from: './src/assets/imgs', to: 'img' },
             ],
         }),
         new HtmlWebpackPlugin({
