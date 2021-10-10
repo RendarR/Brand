@@ -1,5 +1,14 @@
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/styles/style.css ***!
+  \*******************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/styles/style.css (1) ***!
+  \***********************************************************************************/
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/styles/bootstrap-5.1.1/dist/css/bootstrap.css ***!
+  \************************************************************************************************************/
 @charset "UTF-8";
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
@@ -11220,6 +11229,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*!*****************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/styles/customBootstrap.css ***!
+  \*****************************************************************************************/
 a {
   text-decoration: none;
 }
@@ -11235,6 +11247,9 @@ h3 {
   color: #222222;
 }
 
+/*!***********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/layout/styles/style.css (2) ***!
+  \***********************************************************************************/
 @charset "UTF-8";
 * {
   margin: 0;
@@ -11431,7 +11446,7 @@ a {
   animation: pulse-promo 1s ease-in-out infinite;
   animation-iteration-count: 1;
   height: 614px;
-  background-image: url(../f2f278d71838753cc4bc.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/promo.png);
   background-repeat: no-repeat;
   background-position: center -51px;
   display: flex;
@@ -11481,27 +11496,27 @@ a {
 }
 
 .left_1_sales {
-  background-image: url(../9447b91caa091e0a7f96.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_1.png);
   width: 560px;
   height: 542px;
 }
 
 .left_2_sales {
-  background-image: url(../5a19b9f263b55ae1db2c.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_3.png);
   width: 560px;
   height: 261px;
   margin-top: 20px;
 }
 
 .right_2_sales {
-  background-image: url(../1a22d3e8512084afbbac.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_4.png);
   width: 560px;
   height: 542px;
   margin-top: 20px;
 }
 
 .right_1_sales {
-  background-image: url(../8de0532e938a940241db.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_2.png);
   width: 560px;
   height: 261px;
 }
@@ -11697,7 +11712,7 @@ a {
 }
 
 .img_offer {
-  background-image: url(../83d620e43b68aa3afc7f.png), url(../be15f65c734274d857f3.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/offer.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/offerlogo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -11735,7 +11750,7 @@ a {
 
 .subscribe, .subscribe-product {
   display: flex;
-  background-image: url(../1fceb85150b430ce66fa.png), url(../5218c3e7ddee326266a6.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/opacity.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/imgs/1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

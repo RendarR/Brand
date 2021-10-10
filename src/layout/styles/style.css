@@ -196,7 +196,7 @@ a {
   animation: pulse-promo 1s ease-in-out infinite;
   animation-iteration-count: 1;
   height: 614px;
-  background-image: url(../../assets/imgs/promo.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/promo.png);
   background-repeat: no-repeat;
   background-position: center -51px;
   display: flex;
@@ -246,27 +246,27 @@ a {
 }
 
 .left_1_sales {
-  background-image: url(../../assets/imgs/sales_1.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_1.png);
   width: 560px;
   height: 542px;
 }
 
 .left_2_sales {
-  background-image: url(../../assets/imgs/sales_3.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_3.png);
   width: 560px;
   height: 261px;
   margin-top: 20px;
 }
 
 .right_2_sales {
-  background-image: url(../../assets/imgs/sales_4.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_4.png);
   width: 560px;
   height: 542px;
   margin-top: 20px;
 }
 
 .right_1_sales {
-  background-image: url(../../assets/imgs/sales_2.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/sales_2.png);
   width: 560px;
   height: 261px;
 }
@@ -462,7 +462,7 @@ a {
 }
 
 .img_offer {
-  background-image: url(../../assets/imgs/offer.png), url(../../assets/imgs/offerlogo.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/offer.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/offerlogo.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -500,7 +500,7 @@ a {
 
 .subscribe, .subscribe-product {
   display: flex;
-  background-image: url(../../assets/imgs/opacity.png), url(../../assets/imgs/1.png);
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/opacity.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/imgs/1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
