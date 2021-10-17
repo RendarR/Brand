@@ -461,17 +461,16 @@ a {
 }
 .subscribe{
   display: flex;
-  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/opacity.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/imgs/1.png);
+  justify-content: space-around;
+  background-image: url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/opacity.png), url(https://raw.githubusercontent.com/RendarR/Other/master/imgs/1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 438px;
 
 }
 .subscribe_left{
   padding-top: 111px;
   display: flex;
-  width: 66%;
 }
 .text_comment{
   width: 400px;
@@ -526,11 +525,10 @@ a {
   background-color: rgba(241, 109, 127, 1);
 }
 .subscribe_right{
-  margin-top: 148px;
-  width: 53%;
-  margin-left: 125px;
+  padding-top: 148px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 148px;
 }
 .h2_subscribe{
   font-size: 24px;
@@ -1769,5 +1767,99 @@ steps-item{
     opacity: 1;
   }
 }
+
+
+.vibrate-1 {
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+}
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.kenburns-top:hover {
+  -webkit-animation: kenburns-top 1s alternate both;
+  animation: kenburns-top 1s alternate both;
+}
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.1) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.1) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+
+
 // Animation BRAND####################################
 
